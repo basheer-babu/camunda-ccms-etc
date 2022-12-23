@@ -1,0 +1,55 @@
+{
+  "components": [
+    {
+      "label": "Name",
+      "type": "textfield",
+      "id": "Field_103w042",
+      "key": "Name"
+    },
+    {
+      "label": "Phone",
+      "type": "textfield",
+      "id": "Field_15zujfi",
+      "key": "Phone"
+    },
+    {
+      "label": "Court Id",
+      "type": "textfield",
+      "id": "Field_11f3obn",
+      "key": "CourtId"
+    },
+    {
+      "label": "Customer",
+      "type": "textfield",
+      "id": "Field_0i5l5cd",
+      "key": "Customer"
+    },
+    {
+      "label": "Comment",
+      "type": "textfield",
+      "id": "Field_1wtxzw6",
+      "key": "Comment"
+    },
+    {
+      "label": "checker Comment",
+      "type": "textfield",
+      "id": "Field_17ho1nj",
+      "key": "checkcomment"
+    },
+    {
+      "label": "Accept",
+      "type": "textfield",
+      "id": "Field_1qy6xg3",
+      "key": "accept"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0ve5xzl",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.4.2"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 5
+}
