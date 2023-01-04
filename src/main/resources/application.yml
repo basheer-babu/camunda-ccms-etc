@@ -1,4 +1,6 @@
 camunda.bpm:
+  authorization:
+     enabled: true
   admin-user:
     id: demo
     password: demo
@@ -16,7 +18,7 @@ camunda.bpm:
 #url for console of database: http://localhost:8085/h2
 spring:
   datasource:
-    url: jdbc:h2:mem:mydb
+    url: jdbc:h2:file:./camunda-h2-database
     username: sa
     password: password
     driverClassName: org.h2.Driver
@@ -27,7 +29,8 @@ spring:
     spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
-    generate-ddl: true    
+    generate-ddl: true  
+      
 server:
   port: 8085
 

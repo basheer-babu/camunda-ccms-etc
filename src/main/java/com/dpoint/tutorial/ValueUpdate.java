@@ -20,19 +20,23 @@ public class ValueUpdate implements JavaDelegate{
 		System.out.println("called..");
 		
 		CcmsStore cs = new CcmsStore();
-		cs.setComment((String)execution.getVariable("Comment"));
+		cs.setCaseRefrenceNo((String)execution.getVariable("CaseRefrenceNo"));
 		cs.setCourtId((String)execution.getVariable("CourtId"));
 		cs.setCustomer((String)execution.getVariable("Customer"));
-		cs.setName((String)execution.getVariable("Name"));
-		cs.setPhone((String)execution.getVariable("Phone"));
+		cs.setRequestType((String)execution.getVariable("RequestType"));
+		cs.setCourtOrderDate((String)execution.getVariable("CourtOrderDate"));
+		cs.setProInstanceId((String)execution.getProcessInstanceId());
+		cs.setLevel("maker");
 		
 		ccmsDao.save(cs);
-		
-		System.out.println(execution.getVariable("Name"));
-		System.out.println(execution.getVariable("Phone"));
+		System.out.println("AcIn:"+execution.getActivityInstanceId());
+		System.out.println("prin:"+execution.getProcessInstanceId());
+		System.out.println("prtn:"+execution.getTenantId());
+		System.out.println(execution.getVariable("CaseRefrenceNo"));
 		System.out.println(execution.getVariable("CourtId"));
 		System.out.println(execution.getVariable("Customer"));
-		System.out.println(execution.getVariable("Comment"));
+		System.out.println(execution.getVariable("RequestType"));
+		System.out.println(execution.getVariable("CourtOrderDate"));
 //		System.out.println(execution.getVariable("Name"));
 		
 	}

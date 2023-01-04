@@ -1,16 +1,16 @@
 {
   "components": [
     {
-      "label": "Name",
+      "label": "Case Refrence No",
       "type": "textfield",
       "id": "Field_103w042",
-      "key": "Name"
+      "key": "CaseRefrenceNo"
     },
     {
-      "label": "Phone",
+      "label": "Court Name",
       "type": "textfield",
       "id": "Field_15zujfi",
-      "key": "Phone"
+      "key": "CourtName"
     },
     {
       "label": "Court Id",
@@ -25,17 +25,23 @@
       "key": "Customer"
     },
     {
-      "label": "Comment",
+      "label": "Request Type",
       "type": "textfield",
       "id": "Field_1wtxzw6",
-      "key": "Comment"
+      "key": "RequestType"
+    },
+    {
+      "label": "Court Order Date",
+      "type": "textfield",
+      "id": "Field_12tk2vs",
+      "key": "CourtOrderDate"
     }
   ],
   "type": "default",
   "id": "Form_0ve5xzl",
   "exporter": {
     "name": "Camunda Modeler",
-    "version": "5.4.2"
+    "version": "5.4.1"
   },
   "executionPlatform": "Camunda Platform",
   "executionPlatformVersion": "7.18.0",

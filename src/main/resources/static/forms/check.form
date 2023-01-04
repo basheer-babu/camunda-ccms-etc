@@ -1,0 +1,22 @@
+{
+  "components": [
+    {
+      "label": "check",
+      "type": "textfield",
+      "id": "Field_09hubxp",
+      "key": "text",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0b0umk1",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.4.1"
+  },
+  "schemaVersion": 5
+}

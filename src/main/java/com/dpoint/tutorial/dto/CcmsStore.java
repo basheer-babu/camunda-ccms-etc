@@ -11,89 +11,80 @@ public class CcmsStore {
 	@Column(name = "ID")
 	private long id;
 
-	@Column(name = "Name")
-	private String Name;
-
-	@Column(name = "Phone")
-	private String Phone;
-
-	@Column(name = "Court_Id")
+	private String CaseRefrenceNo;
+	private String CourtName;
 	private String CourtId;
-	
-	@Column(name = "Customer")
 	private String Customer;
-	
-	@Column(name = "Comment")
-	private String Comment;
-
-	public CcmsStore() {
-
-	}
-
-	public CcmsStore(long id, String name, String phone, String courtId, String customer, String comment) {
-		super();
-		this.id = id;
-		Name = name;
-		Phone = phone;
-		CourtId = courtId;
-		Customer = customer;
-		Comment = comment;
-	}
-
+	private String RequestType;
+	private String CourtOrderDate;
+	private String ProInstanceId;
+	private String level;
 	public long getId() {
 		return id;
 	}
-
 	public void setId(long id) {
 		this.id = id;
 	}
-
-	public String getName() {
-		return Name;
+	public String getCaseRefrenceNo() {
+		return CaseRefrenceNo;
 	}
-
-	public void setName(String name) {
-		Name = name;
+	public void setCaseRefrenceNo(String caseRefrenceNo) {
+		CaseRefrenceNo = caseRefrenceNo;
 	}
-
-	public String getPhone() {
-		return Phone;
+	public String getCourtName() {
+		return CourtName;
 	}
-
-	public void setPhone(String phone) {
-		Phone = phone;
+	public void setCourtName(String courtName) {
+		CourtName = courtName;
 	}
-
 	public String getCourtId() {
 		return CourtId;
 	}
-
 	public void setCourtId(String courtId) {
 		CourtId = courtId;
 	}
-
 	public String getCustomer() {
 		return Customer;
 	}
-
 	public void setCustomer(String customer) {
 		Customer = customer;
 	}
-
-	public String getComment() {
-		return Comment;
+	public String getRequestType() {
+		return RequestType;
 	}
-
-	public void setComment(String comment) {
-		Comment = comment;
+	public void setRequestType(String requestType) {
+		RequestType = requestType;
 	}
-
+	public String getCourtOrderDate() {
+		return CourtOrderDate;
+	}
+	public void setCourtOrderDate(String courtOrderDate) {
+		CourtOrderDate = courtOrderDate;
+	}
+	public String getProInstanceId() {
+		return ProInstanceId;
+	}
+	public void setProInstanceId(String proInstanceId) {
+		ProInstanceId = proInstanceId;
+	}
+	public String getLevel() {
+		return level;
+	}
+	public void setLevel(String level) {
+		this.level = level;
+	}
 	@Override
 	public String toString() {
-		return "CcmsStore [id=" + id + ", Name=" + Name + ", Phone=" + Phone + ", CourtId=" + CourtId + ", Customer="
-				+ Customer + ", Comment=" + Comment + "]";
+		return "CcmsStore [id=" + id + ", CaseRefrenceNo=" + CaseRefrenceNo + ", CourtName=" + CourtName + ", CourtId="
+				+ CourtId + ", Customer=" + Customer + ", RequestType=" + RequestType + ", CourtOrderDate="
+				+ CourtOrderDate + ", ProInstanceId=" + ProInstanceId + ", level=" + level + "]";
 	}
-
+	
+	
+	
+	
+	
+	
 	
 
 }
